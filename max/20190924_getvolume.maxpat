@@ -39,6 +39,34 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"candycane" : 8,
+					"id" : "obj-8",
+					"maxclass" : "multislider",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 62.495116999999993, 562.0, 178.0, 278.0 ],
+					"setminmax" : [ 0.0, 1.0 ],
+					"setstyle" : 1,
+					"size" : 8
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 494.0, 213.0, 150.0, 45.0 ],
+					"text" : "池袋にはちんちんをだしたおじさんがいるんだってー。"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-29",
 					"maxclass" : "newobj",
 					"numinlets" : 6,
@@ -88,7 +116,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.306801858363106, 0.306801858363106, 0.306801858363106 ],
+					"bgcolor" : [ 0.797837170016428, 0.797837170016428, 0.797837170016428 ],
 					"id" : "obj-6",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -377,7 +405,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 324.0, 30.0, 30.0 ]
+									"patching_rect" : [ 50.0, 339.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1011,6 +1039,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
+					"order" : 2,
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
 					"order" : 1,
 					"source" : [ "obj-40", 0 ]
 				}
@@ -1034,7 +1070,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "getVolume.gendsp",
-				"bootpath" : "~/Desktop/in_the_garden_test/max",
+				"bootpath" : "~/tmi/inthegarden/max",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
