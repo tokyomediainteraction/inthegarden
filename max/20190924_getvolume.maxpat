@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 69.0, 79.0, 488.0, 474.0 ],
+		"rect" : [ 69.0, 79.0, 1103.0, 773.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -94,6 +94,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-3",
@@ -353,7 +354,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 285.40002400000003, 26.0, 135.0, 22.0 ],
 					"restore" : 					{
-						"live.dial" : [ 0.0 ],
+						"live.dial" : [ 3.0 ],
 						"live.dial[1]" : [ 0.0 ],
 						"live.dial[2]" : [ 0.0 ],
 						"live.dial[3]" : [ 0.0 ],
@@ -403,7 +404,7 @@
 					}
 ,
 					"text" : "autopattr @autoname 1",
-					"varname" : "u767010907"
+					"varname" : "u935000766"
 				}
 
 			}
@@ -437,7 +438,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 93.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 666.0, 160.0, 939.0, 665.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -466,49 +467,85 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-92",
+									"id" : "obj-19",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 258.0, 101.0, 22.0 ],
-									"text" : "prepend setvalue"
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 120.5, 355.0, 37.0, 22.0 ],
+									"text" : "zl rev"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-91",
+									"id" : "obj-18",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 120.5, 322.0, 89.5, 22.0 ],
+									"text" : "join 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 191.0, 290.0, 67.0, 22.0 ],
+									"text" : "route voice"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "list" ],
-									"patching_rect" : [ 50.0, 226.0, 66.0, 22.0 ],
+									"patching_rect" : [ 50.0, 191.0, 66.0, 22.0 ],
 									"text" : "listfunnel 1"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-54",
+									"id" : "obj-4",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 4,
-									"outlettype" : [ "int", "float", "int", "int" ],
-									"patching_rect" : [ 213.0, 160.0, 61.0, 22.0 ],
-									"text" : "dspstate~"
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 222.0, 101.0, 22.0 ],
+									"text" : "prepend setvalue"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-53",
+									"id" : "obj-3",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "multichannelsignal", "", "" ],
+									"patching_rect" : [ 50.0, 256.0, 160.0, 22.0 ],
+									"text" : "mc.mstosamps~ @chans 12"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-92",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 194.0, 196.0, 22.0 ],
-									"text" : "vexpr $f1*$i2/1000 @scalarmode 1"
+									"patching_rect" : [ 120.5, 388.0, 101.0, 22.0 ],
+									"text" : "prepend setvalue"
 								}
 
 							}
@@ -634,7 +671,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.000000999999884, 340.0, 30.0, 30.0 ]
+									"patching_rect" : [ 120.5, 423.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -648,7 +685,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-53", 0 ],
+									"destination" : [ "obj-5", 0 ],
 									"source" : [ "obj-12", 0 ]
 								}
 
@@ -669,22 +706,50 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-91", 0 ],
-									"source" : [ "obj-53", 0 ]
+									"destination" : [ "obj-18", 1 ],
+									"source" : [ "obj-16", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-53", 1 ],
-									"source" : [ "obj-54", 1 ]
+									"destination" : [ "obj-19", 0 ],
+									"source" : [ "obj-18", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-92", 0 ],
-									"source" : [ "obj-91", 0 ]
+									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-3", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"source" : [ "obj-3", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-5", 0 ]
 								}
 
 							}
@@ -3315,6 +3380,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-19",
@@ -8204,25 +8270,25 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-19" : [ "live.dial[1]", "sp12", 0 ],
-			"obj-6" : [ "live.text[5]", "live.text", 0 ],
-			"obj-24" : [ "live.dial[5]", "sp12", 0 ],
-			"obj-15" : [ "live.dial", "sp12", 0 ],
-			"obj-76" : [ "live.text[6]", "live.text[6]", 0 ],
-			"obj-80" : [ "mc.live.gain~[4]", "mc.live.gain~", 0 ],
-			"obj-22" : [ "live.dial[4]", "sp12", 0 ],
-			"obj-21" : [ "live.dial[3]", "sp12", 0 ],
-			"obj-1" : [ "live.text", "live.text", 0 ],
-			"obj-5" : [ "live.text[4]", "live.text", 0 ],
-			"obj-121" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
-			"obj-4" : [ "live.text[3]", "live.text", 0 ],
 			"obj-78" : [ "mc.live.gain~[2]", "mc.live.gain~", 0 ],
-			"obj-3" : [ "live.text[2]", "live.text", 0 ],
+			"obj-1" : [ "live.text", "live.text", 0 ],
+			"obj-121" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
+			"obj-19" : [ "live.dial[1]", "sp12", 0 ],
 			"obj-2" : [ "live.text[1]", "live.text", 0 ],
+			"obj-76" : [ "live.text[6]", "live.text[6]", 0 ],
 			"obj-81" : [ "mc.live.gain~[5]", "mc.live.gain~", 0 ],
-			"obj-20" : [ "live.dial[2]", "sp12", 0 ],
-			"obj-28" : [ "mc.live.gain~[1]", "mc.live.gain~", 0 ],
+			"obj-22" : [ "live.dial[4]", "sp12", 0 ],
+			"obj-5" : [ "live.text[4]", "live.text", 0 ],
 			"obj-79" : [ "mc.live.gain~[3]", "mc.live.gain~", 0 ],
+			"obj-20" : [ "live.dial[2]", "sp12", 0 ],
+			"obj-3" : [ "live.text[2]", "live.text", 0 ],
+			"obj-28" : [ "mc.live.gain~[1]", "mc.live.gain~", 0 ],
+			"obj-15" : [ "live.dial", "sp12", 0 ],
+			"obj-24" : [ "live.dial[5]", "sp12", 0 ],
+			"obj-6" : [ "live.text[5]", "live.text", 0 ],
+			"obj-80" : [ "mc.live.gain~[4]", "mc.live.gain~", 0 ],
+			"obj-21" : [ "live.dial[3]", "sp12", 0 ],
+			"obj-4" : [ "live.text[3]", "live.text", 0 ],
 			"parameterbanks" : 			{
 
 			}
