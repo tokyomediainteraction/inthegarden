@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 69.0, 79.0, 801.0, 500.0 ],
+		"rect" : [ 69.0, 79.0, 803.0, 498.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -259,7 +259,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
-									"patching_rect" : [ 143.5, 100.0, 157.0, 22.0 ],
+									"patching_rect" : [ 143.5, 97.0, 157.0, 22.0 ],
 									"text" : "console @showonlyerrors 1"
 								}
 
@@ -389,18 +389,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-132",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 828.0, 170.0, 69.0, 22.0 ],
-					"text" : "t l getkeys l"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontsize" : 18.0,
 					"id" : "obj-96",
 					"maxclass" : "comment",
@@ -424,7 +412,7 @@
 					"patching_rect" : [ 55.75, 379.0, 45.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 170.5, 452.5, 48.988632202148438, 27.0 ],
-					"text" : "8%",
+					"text" : "14%",
 					"textcolor" : [ 0.019607843137255, 0.996078431372549, 0.0, 1.0 ],
 					"textjustification" : 2
 				}
@@ -436,7 +424,7 @@
 					"id" : "obj-122",
 					"maxclass" : "dial",
 					"mode" : 2,
-					"needlecolor" : [ 0.16000184, 1.0, 0.0, 1.0 ],
+					"needlecolor" : [ 0.28000172, 1.0, 0.0, 1.0 ],
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
@@ -1173,7 +1161,7 @@
 					"patching_rect" : [ 484.800048000000061, 45.0, 135.0, 22.0 ],
 					"restore" : 					{
 						"button" : [ 0.0 ],
-						"dial" : [ 8 ],
+						"dial" : [ 11 ],
 						"live.dial" : [ 0.0 ],
 						"live.dial[1]" : [ 0.0 ],
 						"live.dial[2]" : [ 0.0 ],
@@ -1217,14 +1205,14 @@
 						"umenu[17]" : [ 0 ],
 						"umenu[18]" : [ 0 ],
 						"umenu[19]" : [ 0 ],
-						"umenu[1]" : [ "機器セット" ],
+						"umenu[1]" : [ "Built-in Output" ],
 						"umenu[20]" : [ 0 ],
 						"umenu[21]" : [ 0 ],
 						"umenu[22]" : [ 0 ],
 						"umenu[23]" : [ 0 ],
 						"umenu[24]" : [ 0 ],
 						"umenu[25]" : [ 1 ],
-						"umenu[2]" : [ 2 ],
+						"umenu[2]" : [ 0 ],
 						"umenu[3]" : [ 0 ],
 						"umenu[4]" : [ 0 ],
 						"umenu[5]" : [ 0 ],
@@ -1235,7 +1223,7 @@
 					}
 ,
 					"text" : "autopattr @autoname 1",
-					"varname" : "u035001160"
+					"varname" : "u151002536"
 				}
 
 			}
@@ -8791,13 +8779,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-53", 0 ],
-					"source" : [ "obj-132", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-134", 0 ],
 					"order" : 1,
 					"source" : [ "obj-133", 0 ]
@@ -8989,13 +8970,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-132", 0 ],
-					"source" : [ "obj-153", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-137", 0 ],
 					"midpoints" : [ 794.833333333333371, 169.25, 265.90002400000003, 169.25 ],
 					"source" : [ "obj-153", 1 ]
@@ -9007,6 +8981,14 @@
 					"destination" : [ "obj-142", 0 ],
 					"midpoints" : [ 816.166666666666629, 169.25, 512.300048000000061, 169.25 ],
 					"source" : [ "obj-153", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"midpoints" : [ 837.5, 168.25, 1014.5, 168.25 ],
+					"source" : [ "obj-153", 3 ]
 				}
 
 			}
@@ -9808,25 +9790,25 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-20" : [ "live.dial[2]", "sp12", 0 ],
+			"obj-3" : [ "live.text[2]", "live.text", 0 ],
+			"obj-1" : [ "live.text", "live.text", 0 ],
+			"obj-28" : [ "mc.live.gain~[1]", "mc.live.gain~", 0 ],
 			"obj-24" : [ "live.dial[5]", "sp12", 0 ],
 			"obj-6" : [ "live.text[5]", "live.text", 0 ],
 			"obj-80" : [ "mc.live.gain~[4]", "mc.live.gain~", 0 ],
 			"obj-21" : [ "live.dial[3]", "sp12", 0 ],
+			"obj-15" : [ "live.dial", "sp12", 0 ],
 			"obj-4" : [ "live.text[3]", "live.text", 0 ],
 			"obj-78" : [ "mc.live.gain~[2]", "mc.live.gain~", 0 ],
-			"obj-121" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
+			"obj-19" : [ "live.dial[1]", "sp12", 0 ],
 			"obj-2" : [ "live.text[1]", "live.text", 0 ],
 			"obj-76" : [ "live.text[6]", "live.text[6]", 0 ],
 			"obj-81" : [ "mc.live.gain~[5]", "mc.live.gain~", 0 ],
-			"obj-1" : [ "live.text", "live.text", 0 ],
+			"obj-121" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
 			"obj-22" : [ "live.dial[4]", "sp12", 0 ],
 			"obj-5" : [ "live.text[4]", "live.text", 0 ],
 			"obj-79" : [ "mc.live.gain~[3]", "mc.live.gain~", 0 ],
-			"obj-20" : [ "live.dial[2]", "sp12", 0 ],
-			"obj-19" : [ "live.dial[1]", "sp12", 0 ],
-			"obj-3" : [ "live.text[2]", "live.text", 0 ],
-			"obj-28" : [ "mc.live.gain~[1]", "mc.live.gain~", 0 ],
-			"obj-15" : [ "live.dial", "sp12", 0 ],
 			"parameterbanks" : 			{
 
 			}
