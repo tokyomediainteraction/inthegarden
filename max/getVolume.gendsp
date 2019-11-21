@@ -89,8 +89,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 215.5, 93.0, 22.0 ],
-									"text" : "slide 1000 4000"
+									"patching_rect" : [ 50.0, 215.5, 87.0, 22.0 ],
+									"text" : "slide 400 2000"
 								}
 
 							}
@@ -325,8 +325,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 215.5, 93.0, 22.0 ],
-									"text" : "slide 1000 4000"
+									"patching_rect" : [ 50.0, 215.5, 87.0, 22.0 ],
+									"text" : "slide 400 2000"
 								}
 
 							}
@@ -561,8 +561,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 215.5, 93.0, 22.0 ],
-									"text" : "slide 1000 4000"
+									"patching_rect" : [ 50.0, 215.5, 87.0, 22.0 ],
+									"text" : "slide 400 2000"
 								}
 
 							}
@@ -797,8 +797,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 215.5, 93.0, 22.0 ],
-									"text" : "slide 1000 4000"
+									"patching_rect" : [ 50.0, 215.5, 87.0, 22.0 ],
+									"text" : "slide 400 2000"
 								}
 
 							}
@@ -1033,8 +1033,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 215.5, 93.0, 22.0 ],
-									"text" : "slide 1000 4000"
+									"patching_rect" : [ 50.0, 215.5, 87.0, 22.0 ],
+									"text" : "slide 400 2000"
 								}
 
 							}
@@ -1269,8 +1269,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 215.5, 93.0, 22.0 ],
-									"text" : "slide 1000 4000"
+									"patching_rect" : [ 50.0, 215.5, 87.0, 22.0 ],
+									"text" : "slide 400 2000"
 								}
 
 							}
@@ -1505,8 +1505,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 215.5, 93.0, 22.0 ],
-									"text" : "slide 1000 4000"
+									"patching_rect" : [ 50.0, 215.5, 87.0, 22.0 ],
+									"text" : "slide 400 2000"
 								}
 
 							}
@@ -1741,8 +1741,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 215.5, 93.0, 22.0 ],
-									"text" : "slide 1000 4000"
+									"patching_rect" : [ 50.0, 215.5, 87.0, 22.0 ],
+									"text" : "slide 400 2000"
 								}
 
 							}
